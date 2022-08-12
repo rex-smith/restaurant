@@ -1,3 +1,4 @@
+import loadStructure from './pageLoad.js'
 import './style.css';
 
-console.log("I am working!");
+loadStructure();
