@@ -17,6 +17,9 @@ module.exports = {
   devServer: {
     static: './dist',
   },
+  watchOptions: {
+    poll: 1000 // Check for changes every second
+  },
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),

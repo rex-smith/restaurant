@@ -52,18 +52,24 @@ table {
 body {
   font-family: 'Rubik', sans-serif;
   text-align: center;
+  background-image: url(pepper-super-sm.jpg);
+  background-repeat: repeat;
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: goldenrod;
+  background-color: rgb(145, 27, 27);
+  height: 80px;
 }
 
 .nav-logo {
   margin: 10px;
-  width: 200px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .nav-menu {
@@ -75,16 +81,23 @@ body {
 .logo {
   font-size: 3rem;
   font-weight: 700;
-  color: darkolivegreen;
+  color: rgb(17, 17, 70);
 }
 
 .nav-link {
-  margin: 10px;
+  padding: 10px;
+  margin: 0px 10px;
   text-decoration: none;
-  color: darkolivegreen;
-  border-bottom: goldenrod 5px solid;
+  color: rgb(17, 17, 70);
+  border-bottom: rgb(17, 17, 70) 5px solid;
   font-weight: 600;
   font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  border-bottom: white 5px solid;
+  color: white;
 }
 
 .main {
@@ -92,22 +105,48 @@ body {
   flex-direction: column;
   align-items: center;
   width: 800px;
-  margin: 20px auto;
+  margin: 0px auto;
+  padding-top: 20px;
   background-color: blanchedalmond;
+  min-height: 100%;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: 700;
-  color: darkolivegreen;
+  color: rgb(17, 17, 70);
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(17, 17, 70);
   margin-bottom: 20px;
-  text-align: left;
+}
+
+.dish {
+  margin: 40px 0px;
+}
+
+.dish-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(17, 17, 70);
+  margin-bottom: 20px;
+}
+
+.dish-cost {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(17, 17, 70);
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  color: darkolivegreen;
+  color: rgb(17, 17, 70);
   text-align: left;
-  line-height: 1.1rem;
+  line-height: 2rem;
+  margin: 20px;
 }

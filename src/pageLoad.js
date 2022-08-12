@@ -1,4 +1,5 @@
 // Show all the content when the page is first loaded
+import home from './home.js'
 
 export default function loadStructure() {
 
@@ -11,20 +12,19 @@ export default function loadStructure() {
   const navBar = document.createElement('nav');
   navBar.classList.add('navbar');
 
-  const aboutLink = document.createElement('div');
-  aboutLink.classList.add('nav-link');
-  aboutLink.textContent = 'About';
-
   const menuLink = document.createElement('div');
   menuLink.classList.add('nav-link');
+  menuLink.id = 'menu';
   menuLink.textContent = 'Menu';
 
   const contactLink = document.createElement('div');
   contactLink.classList.add('nav-link');
+  contactLink.id = 'contact';
   contactLink.textContent = 'Contact';
 
   const homeLink = document.createElement('div');
   homeLink.classList.add('nav-link');
+  homeLink.id = 'home';
   homeLink.textContent = 'Home';
 
   const logoLink  = document.createElement('div');
@@ -51,32 +51,7 @@ export default function loadStructure() {
   main.classList.add('main');
   content.appendChild(main);
 
-
-  // Home
-
-  const home = document.createElement('div');
-  const homeTitle = document.createElement('h1');
-  homeTitle.innerText = "Our Restaurant"
-  const homeContent = document.createElement('p');
-  homeContent.textContent = `We are a family-owned mexican restaurant located
-                        in the South End in Boston. We serve authentic
-                        recipes from Jalisco, MX.`
-  home.appendChild(homeTitle);
-  home.appendChild(homeContent);
-
-  main.appendChild(home)
-
-  // Menu
-
-  // About
-
-
-
-  // Contact
-
-  // Footer
-  const footer = document.createElement('div');
-
+  home();
 
 }
 
