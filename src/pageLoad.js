@@ -20,7 +20,11 @@ export default function loadStructure() {
   const contactLink = document.createElement('div');
   contactLink.classList.add('nav-link');
   contactLink.id = 'contact';
-  contactLink.textContent = 'Contact';
+  const contactText = document.createElement('div');
+  contactText.classList.add('nav-link-text');
+  contactText.textContent = 'Contact';
+  contactLink.appendChild(contactText);
+
 
   const homeLink = document.createElement('div');
   homeLink.classList.add('nav-link');

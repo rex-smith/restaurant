@@ -75,7 +75,7 @@ body {
 .nav-menu {
   display: flex;
   flex-direction: row-reverse;
-  margin: 20px;
+  margin: 0px;
 }
 
 .logo {
@@ -85,19 +85,32 @@ body {
 }
 
 .nav-link {
-  padding: 10px;
-  margin: 0px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-decoration: none;
+  margin: 0px 10px;
+  padding: 0px 20px;
   color: rgb(17, 17, 70);
-  border-bottom: rgb(17, 17, 70) 5px solid;
   font-weight: 600;
   font-size: 1.2rem;
   cursor: pointer;
+  height: 100%;
+}
+
+.nav-link-text {
+
 }
 
 .nav-link:hover {
   border-bottom: white 5px solid;
   color: white;
+}
+
+.active {
+  border-bottom: rgb(145, 27, 27) 5px solid;
+  color: rgb(145, 27, 27);
+  background-color: rgb(17, 17, 70);
 }
 
 .main {
