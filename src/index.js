@@ -41,9 +41,7 @@ function clearMainContent() {
 }
 
 function activateTab(newActiveTab) {
-  console.log(tabs);
   tabs.forEach(tab => {
-    console.log(tab);
     if (tab.classList.contains('active')) {
       tab.classList.remove('active');
     }

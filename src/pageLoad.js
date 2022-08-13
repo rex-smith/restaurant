@@ -41,9 +41,10 @@ export default function loadStructure() {
   navMenuContainer.classList.add('nav-menu');
 
   logoContainer.appendChild(logoLink);
-  navMenuContainer.appendChild(homeLink);
-  navMenuContainer.appendChild(menuLink);
+  
   navMenuContainer.appendChild(contactLink);
+  navMenuContainer.appendChild(menuLink);
+  navMenuContainer.appendChild(homeLink);
 
   navBar.appendChild(logoContainer);
   navBar.appendChild(navMenuContainer);
